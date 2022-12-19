@@ -20,3 +20,25 @@ class funt:
 
     def string(self):
         return self.new_express
+
+
+class fun:
+    def __init__(self, function, params):
+        self.function = function
+        self.params = params
+
+    def call(self, x, y, t):
+        return self.function(x, y, t, self.params)
+
+    def Change_params(self, params):
+        self.params = params
+
+class SystemEdos:
+    def __init__(self,f,g):
+        self.f = f
+        self.g = g
+      
+    def evaluate(self,Y ,t):
+        x, y = Y
+        return [self.f(x,y,t),self.g(x,y,t)]
+    
