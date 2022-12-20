@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.15)  20 DEC 2022 00:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.15)  20 DEC 2022 03:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -26,57 +26,183 @@ File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
+) (C:\Users\paco2\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen141
+\ar@mcellbox=\box51
+\extrarowheight=\dimen142
+\NC@list=\toks18
+\extratabsurround=\skip50
+\backup@length=\skip51
+\ar@cellbox=\box52
+) (C:\Users\paco2\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\paco2\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+) (C:\Users\paco2\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\paco2\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\paco2\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (C:\Users\paco2\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen143
+\Gin@req@width=\dimen144
 ) (C:\Users\paco2\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count193
-\l__pdf_internal_box=\box51
+\l__pdf_internal_box=\box53
 ) (c:\Users\paco2\Desktop\Edo final proyect\Proyect\Build\informe.aux)
 \openout1 = `informe.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+ (C:\Users\paco2\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count194
+\scratchdimen=\dimen145
+\scratchbox=\box54
+\nofMPsegments=\count195
+\nofMParguments=\count196
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count197
+\MPscratchDim=\dimen146
+\MPnumerator=\count198
+\makeMPintoPDFobject=\count199
+\everyMPtoPDFconversion=\toks21
+) (C:\Users\paco2\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\paco2\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 12.
+(Font)              <12> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 12.
+(Font)              <8> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 12.
+(Font)              <6> on input line 13.
 
-Overfull \hbox (4.35768pt too wide) in paragraph at lines 14--14
+Overfull \hbox (4.35768pt too wide) in paragraph at lines 15--15
 \OT1/cmr/bx/n/14.4 AND LARGE DE-LAYS IN A TUMOR-IMMUNE
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 34.
+(Font)              <7> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 34.
+(Font)              <5> on input line 35.
 [1
 
-{C:/Users/paco2/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (c:\Users\paco2\Desktop\Edo final proyect\Proyect\Build\informe.aux) ) 
+{C:/Users/paco2/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+<Isoclinas de a=-1 y d=1.jpg, id=16, 117.94063pt x 102.88437pt>
+File: Isoclinas de a=-1 y d=1.jpg Graphic file (type jpg)
+<use Isoclinas de a=-1 y d=1.jpg>
+Package pdftex.def Info: Isoclinas de a=-1 y d=1.jpg  used on input line 120.
+(pdftex.def)             Requested size: 117.94032pt x 102.88411pt.
+<Campo Vectoraal para a=-1 y d=1.jpg, id=17, 430.60875pt x 331.73938pt>
+File: Campo Vectoraal para a=-1 y d=1.jpg Graphic file (type jpg)
+<use Campo Vectoraal para a=-1 y d=1.jpg>
+Package pdftex.def Info: Campo Vectoraal para a=-1 y d=1.jpg  used on input line 121.
+(pdftex.def)             Requested size: 430.60768pt x 331.73856pt.
+
+Overfull \hbox (85.60768pt too wide) in paragraph at lines 119--121
+ [] 
+ []
+
+[3] [4 <./Isoclinas de a=-1 y d=1.jpg> <./Campo Vectoraal para a=-1 y d=1.jpg>]
+<isoclinas 2jpg.jpg, id=25, 113.42375pt x 108.90688pt>
+File: isoclinas 2jpg.jpg Graphic file (type jpg)
+<use isoclinas 2jpg.jpg>
+Package pdftex.def Info: isoclinas 2jpg.jpg  used on input line 138.
+(pdftex.def)             Requested size: 113.42346pt x 108.90659pt.
+<Campo vectorail de d=-1 a1 .jpg, id=26, 432.61626pt x 331.2375pt>
+File: Campo vectorail de d=-1 a1 .jpg Graphic file (type jpg)
+<use Campo vectorail de d=-1 a1 .jpg>
+Package pdftex.def Info: Campo vectorail de d=-1 a1 .jpg  used on input line 139.
+(pdftex.def)             Requested size: 432.6152pt x 331.23668pt.
+
+Overfull \hbox (87.6152pt too wide) in paragraph at lines 137--140
+ [] 
+ []
+
+[5 <./isoclinas 2jpg.jpg> <./Campo vectorail de d=-1 a1 .jpg>]
+<isoclinas d=1 a=-2.jpg, id=30, 116.435pt x 105.89563pt>
+File: isoclinas d=1 a=-2.jpg Graphic file (type jpg)
+<use isoclinas d=1 a=-2.jpg>
+Package pdftex.def Info: isoclinas d=1 a=-2.jpg  used on input line 156.
+(pdftex.def)             Requested size: 116.43471pt x 105.89536pt.
+<Diagrama de fases para a-2 d1.jpg, id=31, 432.61626pt x 332.74312pt>
+File: Diagrama de fases para a-2 d1.jpg Graphic file (type jpg)
+<use Diagrama de fases para a-2 d1.jpg>
+Package pdftex.def Info: Diagrama de fases para a-2 d1.jpg  used on input line 157.
+(pdftex.def)             Requested size: 432.6152pt x 332.7423pt.
+
+Overfull \hbox (87.6152pt too wide) in paragraph at lines 155--158
+ [] 
+ []
+
+[6 <./isoclinas d=1 a=-2.jpg> <./Diagrama de fases para a-2 d1.jpg>]
+<punto silla inestable isoclinas.jpg, id=35, 116.435pt x 106.89937pt>
+File: punto silla inestable isoclinas.jpg Graphic file (type jpg)
+<use punto silla inestable isoclinas.jpg>
+Package pdftex.def Info: punto silla inestable isoclinas.jpg  used on input line 175.
+(pdftex.def)             Requested size: 116.43471pt x 106.8991pt.
+<punto silla inestable.jpg, id=36, 429.605pt x 334.24875pt>
+File: punto silla inestable.jpg Graphic file (type jpg)
+<use punto silla inestable.jpg>
+Package pdftex.def Info: punto silla inestable.jpg  used on input line 176.
+(pdftex.def)             Requested size: 429.60394pt x 334.24792pt.
+
+Overfull \hbox (84.60394pt too wide) in paragraph at lines 174--177
+ [] 
+ []
+
+[7] [8 <./punto silla inestable isoclinas.jpg> <./punto silla inestable.jpg>]
+<isoclinas d=-2 a=1.jpg, id=44, 118.94438pt x 108.405pt>
+File: isoclinas d=-2 a=1.jpg Graphic file (type jpg)
+<use isoclinas d=-2 a=1.jpg>
+Package pdftex.def Info: isoclinas d=-2 a=1.jpg  used on input line 193.
+(pdftex.def)             Requested size: 118.94408pt x 108.40472pt.
+<vecotrial d=-2 a=1.jpg, id=45, 432.11438pt x 328.72812pt>
+File: vecotrial d=-2 a=1.jpg Graphic file (type jpg)
+<use vecotrial d=-2 a=1.jpg>
+Package pdftex.def Info: vecotrial d=-2 a=1.jpg  used on input line 194.
+(pdftex.def)             Requested size: 432.11331pt x 328.72731pt.
+
+Overfull \hbox (87.11331pt too wide) in paragraph at lines 192--195
+ [] 
+ []
+
+[9 <./isoclinas d=-2 a=1.jpg> <./vecotrial d=-2 a=1.jpg>] (c:\Users\paco2\Desktop\Edo final proyect\Proyect\Build\informe.aux) ) 
 Here is how much of TeX's memory you used:
- 494 strings out of 475281
- 9993 string characters out of 2774064
- 354816 words of memory out of 3000000
- 22045 multiletter control sequences out of 15000+600000
+ 1479 strings out of 475281
+ 26671 string characters out of 2774064
+ 371242 words of memory out of 3000000
+ 22982 multiletter control sequences out of 15000+600000
  473206 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,7n,38p,204b,208s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "c:\Users\paco2\Desktop\Edo final proyect\Proyect\Build\informe.pdf" (1 page, 91678 bytes).
+ 55i,7n,62p,298b,191s stack positions out of 10000i,1000n,20000p,200000b,80000s
+<C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "c:\Users\paco2\Desktop\Edo final proyect\Proyect\Build\informe.pdf" (9 pages, 1027865 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
+ 87 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

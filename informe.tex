@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
-
+\usepackage{array}
+\usepackage{graphicx}
 \title{Informe de la Tarea Investigativa II, presentado por los
 estudiantes del equipo No. 30}
 \author{Francisco Vicente Suárez Bellón C-212 \\
@@ -31,12 +32,167 @@ A TUMOR-IMMUNE SYSTEM MODEL}
     salen del objeto de este trabajo las cuales son:
     \centering
     \subsection*{Ecuaciones no ordinarias}
-        $\frac{d x}{d t} $ =$\sigma + \omega x(t- \tau )-
+      $\frac{d x}{d t} $ =$\sigma + \omega x(t- \tau )y(t- \tau )-
         \delta x
         $
-        //
+        \\
         $\frac{d y}{d t}$=$\alpha y(1-\beta y)-xy$
-    
 
 
+
+Sin embargo tambien nos proporcionan otro sistema de ecuaciones diferenciales ordinarias las cuales son el objeto de estudio 
+en este trabajo 
+\centering
+   \subsection*{Sistema a trabajar}
+        $\frac{d x}{d t} $ =$\sigma + \omega xy-
+            \delta x
+            $
+            \\
+            $\frac{d y}{d t}$=$\alpha y(1-\beta y)-xy$
+
+\section{Metodología}
+\noindent 
+  Para poder analizar este sistema no lineal de ecuaciones diferenciales ordinarias usaremos los recursos numericos como Runge-
+  Kutta 4 y el método de Euler Modificado además de utilizar recursos computacionales para ilustar los resultados obtenidos mediante
+  gráficas.
+  
+  Comenzamos buscando los posibles puntos de equilibrio de este sistema de ecuaciones diferenciales ordinarias
+  para ello buscamos para que valores ambas ecuaciones se hacen cero simultáneamente luego para obtener su análisis de estabilidad
+  usaremos el teorema de Hartman–Grobman\\
+  Para aplicar las hipótesis del teorema antes descrito es necesario "linealizar" el sistema dado que este no 
+  es lineal por lo que se hace uso de la siguiente matriz de jacobiano del sistema respecto a  $x$ y $y$ respectivamente
+ \subsection*{Matriz de jacobiano}
+    \[
+    \left(
+    \begin{array}{lc}
+      y\omega-\delta & x\omega\\
+      -y & -x-y\alpha\beta+\alpha(-y\beta+1)
+    \end{array}
+    \right)
+    \]
+  
+  \centering  
+  
+  Nos centraremos en el análisis en el punto de equilibrio $(0,0)$ dado que en dicho punto la matriz se convierte en una
+  matriz diagonal lo cual facilita mucho el análisis de estabilidad de este punto de equilibrio.
+  \subsection*{Matriz jacobina en (0,0)}
+    \[
+    \left(
+    \begin{array}{lc}
+      -\delta & 0\\
+      0 & \alpha
+    \end{array}
+    \right)
+    \]
+
+  \noindent
+    \subsection*{Análisis de estabilidad: \\ TEOREMA 2 Estabilidad de sistemas casi lineales}
+      
+      Sean $\lambda1$ y $\lambda2$ los eigenvalores de la matriz de coefiecientes del sistema lineal dado 
+      asociado con el sistema casi lineal. Entonces:\\
+      1. Si  $\lambda1$ $=$ $\lambda2$ son eigenvalores reales e iguales, por consiguiente el punto crítico 
+      (0, 0)  es un nodo o un punto espiral, y es asintóticamente estable si $\lambda1$
+      $=$  $\lambda2$ $<$ 0, e inestable si $\lambda1$ $=$  $\lambda2$ $>$ 0.\\
+      2. Si $\lambda1$ y $\lambda2$  son imaginarios puros, entonces (0, 0) es un centro o un punto espiral, 
+      y puede ser asintóticamente estable, estable o inestable.\\
+
+      3. En caso contrario —esto es, que  $\lambda1$ y  $\lambda2$ no sean reales e iguales o imaginarios 
+      puros—, el punto crítico (0, 0) del sistema casi lineal  es del mismo 
+      tipo y con la misma estabilidad que el punto crítico (0, 0) del sistema lineal 
+      asociado
+
+      %punto a=-1 d=1
+    \section{Resultados}
+       El tipo de estabilidad del punto (0,0) dependerá de los valores de: $\delta$ y $\alpha$
+       \subsection{$\delta$=1 y $\alpha$=-1} 
+         La matriz del jacobiano quedaria
+         \[
+          \left(
+          \begin{array}{lc}
+            -1 & 0\\
+            0 & -1
+          \end{array}
+          \right)
+          \]         
+          Con lo que es un nodo o punto espiral y asintóticamente estable 
+          \subsection*{Planos Fase del punto }
+          \noindent
+          \includegraphics{Isoclinas de a=-1 y d=1.jpg}
+           \includegraphics{Campo Vectoraal para a=-1 y d=1.jpg}\\
+           
+           %Punto a=1 d=-1
+      \subsection*{$\delta$=-1 y $\alpha$=1}
+        El tipo de estabilidad del punto (0,0) dependerá de los valores de: $\delta$ y $\alpha$
+        La matriz del jacobiano quedaría
+        \[
+         \left(
+         \begin{array}{lc}
+           1 & 0\\
+           0 & 1
+         \end{array}
+         \right)
+         \]         
+         Con lo que es un nodo o punto espiral y asintóticamente inestable
+         \subsection*{Planos Fase del punto }
+         \noindent
+         \includegraphics{isoclinas 2jpg.jpg}
+          \includegraphics{Campo vectorail de d=-1 a1 .jpg}
+        
+          %Punto a=-2 d=1
+      \subsection*{$\delta$=1 y $\alpha$=-2}
+       
+        La matriz del jacobiano quedaría
+        \[
+         \left(
+         \begin{array}{lc}
+           -1 & 0\\
+           0 & -2
+         \end{array}
+         \right)
+         \]         
+         Con lo que es un nodo impropio estable
+         \subsection*{Planos Fase del punto }
+         \noindent
+         \includegraphics{isoclinas d=1 a=-2.jpg}
+          \includegraphics{Diagrama de fases para a-2 d1.jpg}
+
+
+           %Punto a=1 d=1
+     \subsection*{$\delta$=1 y $\alpha$=1}
+       
+        La matriz del jacobiano quedaría
+        \[
+         \left(
+         \begin{array}{lc}
+           -1 & 0\\
+           0 & 1
+         \end{array}
+         \right)
+         \]         
+         Punto silla inestable
+         \subsection*{Planos Fase del punto }
+         \noindent
+         \includegraphics{punto silla inestable isoclinas.jpg}
+          \includegraphics{punto silla inestable.jpg}
+           
+         %punto a=1 y d=-2
+   \subsection*{$\delta$=1 y $\alpha$=1}
+       
+        La matriz del jacobiano quedaría
+        \[
+         \left(
+         \begin{array}{lc}
+           2 & 0\\
+           0 & 1
+         \end{array}
+         \right)
+         \]         
+         Nodo impropio inestable
+         \subsection*{Planos Fase del punto }
+         \noindent
+         \includegraphics{isoclinas d=-2 a=1.jpg}
+          \includegraphics{vecotrial d=-2 a=1.jpg}
+           
 \end{document}
+
+  
