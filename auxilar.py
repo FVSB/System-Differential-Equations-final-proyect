@@ -14,7 +14,7 @@ class funt:
         x = parser.parse(self.exp)
         self.new_express = x.simplify(params).toString()
 
-    def evaluate(self, x, y, t):
+    def evaluate(self, x, y, t=0):
         parser = Parser()
         return parser.evaluate(self.new_express, {'x': x, 'y': y, 't': t})
 
@@ -27,7 +27,7 @@ class fun:
         self.function = function
         self.params = params
 
-    def call(self, x, y, t):
+    def call(self, x, y, t=0):
         return self.function(x, y, t, self.params)
 
     def Change_params(self, params):
@@ -38,7 +38,7 @@ class SystemEdos:
         self.f = f
         self.g = g
       
-    def evaluate(self,Y ,t):
+    def evaluate(self,Y ,t=0):
         x, y = Y
         return [self.f(x,y,t),self.g(x,y,t)]
     

@@ -50,6 +50,7 @@ def plot(t, x, y, title):
 
     plt.show()
     plt.close()
+
     plt.plot(x, y)
     plt.title(str(title+" phase space"))
     plt.show()
@@ -83,54 +84,78 @@ def Plot_Fields(f, g, t=0):
         plt.ylabel('$y_2$')
         plt.xlim([-2, 8])
         plt.ylim([-4, 4])
-        
-        
-        
-def Isoclinas(f,points=[0, 0.5, 1, 1.5, 2, 2.5]):
-    
+
+
+def Isoclinas(f, points=[-2-5, -2, -1.5, -1, -0.5,  0, 0.5, 1, 1.5, 2, 2.5]):
+
     for y20 in points:
         tspan = np.linspace(0, 0.5, 20)
         y0 = [0.0, y20]
         ys = odeint(f, y0, tspan)
-        plt.plot(ys[:,0], ys[:,1], 'b-') # path
-        plt.plot([ys[0,0]], [ys[0,1]], 'o') # start
-        plt.plot([ys[-1,0]], [ys[-1,1]], 's') # end
-        
+
+        plt.plot(ys[:, 0], ys[:, 1], 'b-')  # path
+        plt.plot([ys[0, 0]], [ys[0, 1]], 'o')  # start
+        plt.plot([ys[-1, 0]], [ys[-1, 1]], 's')  # end
 
     plt.xlim([-2, 8])
 
     plt.show()
 
 
-
-
-def fieldplot(f,g,xmin,xmax,ymin,ymax,color='b',aspect=None,nx=20,boostarrows=1.):
-    #plt.clf()
-    #figure(figsize=(12,12))
-    #figure(figsize=(8,8),facecolor='w')
+def fieldplot(f, g, xmin, xmax, ymin, ymax, color='b', aspect=None, nx=20, boostarrows=1.):
+    # plt.clf()
+    # figure(figsize=(12,12))
+    # figure(figsize=(8,8),facecolor='w')
     #nx = 20
     xr = xmax-xmin
     yr = ymax-ymin
     ny = int(nx*yr/xr)
-    if aspect!=None:
-        plt.subplot(111,aspect=aspect)
-    X,Y = np.meshgrid( np.linspace(xmin,xmax,nx), np.linspace(ymin,ymax,ny) )
+    if aspect != None:
+        plt.subplot(111, aspect=aspect)
+    X, Y = np.meshgrid(np.linspace(xmin, xmax, nx),
+                       np.linspace(ymin, ymax, ny))
     X = X.flatten()
     Y = Y.flatten()
-    U = f(X,Y)
-    V = g(X,Y)
-    #print(U)
-    #print(V)
+    U = f(X, Y)
+    V = g(X, Y)
+    # print(U)
+    # print(V)
     # scale length of arrows - note arrowhead is added beyond the end of the line segment
-    h = boostarrows*0.9*min(xr/float(nx-1)/abs(U).max(),yr/float(ny-1)/abs(V).max())
+    h = boostarrows*0.9*min(xr/float(nx-1)/abs(U).max(),
+                            yr/float(ny-1)/abs(V).max())
     Xp = X + h*U
     Yp = Y + h*V
-    arrowsX = np.vstack((X,Xp))
-    arrowsY = np.vstack((Y,Yp))
-    head_width  = 0.005*xr
+    arrowsX = np.vstack((X, Xp))
+    arrowsY = np.vstack((Y, Yp))
+    head_width = 0.005*xr
     head_length = head_width/0.6
-    for x,y,u,v in zip(X,Y,U,V):
-        plt.arrow( x,y, h*u,h*v, fc=color, ec=color, alpha=0.5, width=head_width/5, head_width=head_width, head_length=head_length )
-    plt.xlim(xmin,xmax) # plot ranges strangely are [0,1] x [0,1] otherwise
-    plt.ylim(ymin,ymax)
-    
+    for x, y, u, v in zip(X, Y, U, V):
+        plt.arrow(x, y, h*u, h*v, fc=color, ec=color, alpha=0.5,
+                  width=head_width/5, head_width=head_width, head_length=head_length)
+    plt.xlim(xmin, xmax)  # plot ranges strangely are [0,1] x [0,1] otherwise
+    plt.ylim(ymin, ymax)
+    plt.show()
+
+
+def model(X, t):
+    x = X[0]
+    y = X[1]
+    dxdt = x - y
+    dydt = 1-x**2
+    return [dxdt, dydt]
+
+# Diagrama de fases
+
+
+def Plano_Fase(f, g):
+
+    xvalues, yvalues = np.meshgrid(
+        np.arange(-10, 10, 0.5), np.arange(-10, 10, 0.5))
+
+    plt.subplots_adjust(hspace=0.4, wspace=0.4)
+    xdot = f(xvalues, yvalues)
+    ydot = g(xvalues, yvalues)
+    plt.subplot(3, 4, 1)
+    plt.streamplot(xvalues, yvalues, xdot, ydot, density=0.5)
+
+    plt.show()
