@@ -24,10 +24,30 @@ A TUMOR-IMMUNE SYSTEM MODEL}
              }
 \subsection*{\centering Impacto: 1.282 }
 
-\section{Introduction}
+
+\section{Valoración del artículo}
+  \subsection*{Breve explicación}
+  \noindent
+   En el artículo a analizado el autor investiga mediante un modelo matemático el comportamiento 
+   de un tumor y la respuesta del sistema inmune del individuo. La explicación científica-medica
+   no es un argumento a analizar en dicho paper dado que no es su objetivo de estudio aunque si
+   deja referenciado en que otros estudios y publicaciones se basa dicho modelo
+   \subsection*{Problemática que se propone resolver
+   }
+   El artículo explica que el modelo matemático estudiado de otra publicación y su modificación 
+   tiene una coincidencia lógica con los comportamientos biológicos del individuo, así como la no existencia
+   de soluciones negativas o los puntos de estabilidad del mismo 
+   \subsection*{Breve introducción}
+   El modelo matemático que refleja la situación esta constituido por
+    un sistema de 2 ecuaciones diferenciales (2.1) , donde “w”
+     describe la respuesta inmune ante la aparición del tumor y “t” refleja 
+     el tiempo que demora el sistema inmune en proporcionar una respuesta a 
+    
+\section{Introducción al problema a analizar}
 \noindent En este articulo se hace referencia a un modelo de tumor inmune que expresa su comportamiento mediante 
  ecuaciones diferenciales en este se centran principalmente en su análisis de estabilidad y su estudio de
-    soluciones periódicas. Para ello se hace uso de la teoría de la estabilidad de Lyapunov. El sistema el cual analizan en 
+    soluciones periódicas. Para ello se hace uso de la teoría de la estabilidad de Lyapunov.
+     El sistema el cual analizan en 
     profundidad es un sistema de ecuaciones diferenciales no ordinarias las cuales se 
     salen del objeto de este trabajo las cuales son:
     \centering
@@ -40,7 +60,8 @@ A TUMOR-IMMUNE SYSTEM MODEL}
 
 
 
-Sin embargo tambien nos proporcionan otro sistema de ecuaciones diferenciales ordinarias las cuales son el objeto de estudio 
+Sin embargo también nos proporcionan otro sistema de ecuaciones diferenciales ordinarias las
+ cuales son el objeto de estudio 
 en este trabajo 
 \centering
    \subsection*{Sistema a trabajar}
@@ -49,15 +70,17 @@ en este trabajo
             $
             \\
             $\frac{d y}{d t}$=$\alpha y(1-\beta y)-xy$
-
+      \\(2.1)
 \section{Metodología}
 \noindent 
-  Para poder analizar este sistema no lineal de ecuaciones diferenciales ordinarias usaremos los recursos numericos como Runge-
-  Kutta 4 y el método de Euler Modificado además de utilizar recursos computacionales para ilustar los resultados obtenidos mediante
+  Para poder analizar este sistema no lineal de ecuaciones diferenciales ordinarias usaremos los 
+  recursos numéricos como Runge-Kutta 4 y el método de Euler Modificado además
+   de utilizar recursos computacionales para ilustrar los resultados obtenidos mediante
   gráficas.
   
   Comenzamos buscando los posibles puntos de equilibrio de este sistema de ecuaciones diferenciales ordinarias
-  para ello buscamos para que valores ambas ecuaciones se hacen cero simultáneamente luego para obtener su análisis de estabilidad
+  para ello buscamos para que valores ambas ecuaciones se hacen cero simultáneamente luego para obtener su
+   análisis de estabilidad
   usaremos el teorema de Hartman–Grobman\\
   Para aplicar las hipótesis del teorema antes descrito es necesario "linealizar" el sistema dado que este no 
   es lineal por lo que se hace uso de la siguiente matriz de jacobiano del sistema respecto a  $x$ y $y$ respectivamente
@@ -70,10 +93,11 @@ en este trabajo
     \end{array}
     \right)
     \]
-  
+      
   \centering  
   
-  Nos centraremos en el análisis en el punto de equilibrio $(0,0)$ dado que en dicho punto la matriz se convierte en una
+  Nos centraremos en el análisis en el punto de equilibrio $(0,0)$ dado que en dicho punto la matriz
+   se convierte en una
   matriz diagonal lo cual facilita mucho el análisis de estabilidad de este punto de equilibrio.
   \subsection*{Matriz jacobina en (0,0)}
     \[
@@ -88,9 +112,10 @@ en este trabajo
   \noindent
     \subsection*{Análisis de estabilidad: \\ TEOREMA 2 Estabilidad de sistemas casi lineales}
       
-      Sean $\lambda1$ y $\lambda2$ los eigenvalores de la matriz de coefiecientes del sistema lineal dado 
+      Sean $\lambda1$ y $\lambda2$ los eigenvalues de la matriz de
+       coeficientes del sistema lineal dado 
       asociado con el sistema casi lineal. Entonces:\\
-      1. Si  $\lambda1$ $=$ $\lambda2$ son eigenvalores reales e iguales, por consiguiente el punto crítico 
+      1. Si  $\lambda1$ $=$ $\lambda2$ son eigenvalues reales e iguales, por consiguiente el punto crítico 
       (0, 0)  es un nodo o un punto espiral, y es asintóticamente estable si $\lambda1$
       $=$  $\lambda2$ $<$ 0, e inestable si $\lambda1$ $=$  $\lambda2$ $>$ 0.\\
       2. Si $\lambda1$ y $\lambda2$  son imaginarios puros, entonces (0, 0) es un centro o un punto espiral, 
@@ -105,7 +130,7 @@ en este trabajo
     \section{Resultados}
        El tipo de estabilidad del punto (0,0) dependerá de los valores de: $\delta$ y $\alpha$
        \subsection{$\delta$=1 y $\alpha$=-1} 
-         La matriz del jacobiano quedaria
+         La matriz del jacobiano $:$
          \[
           \left(
           \begin{array}{lc}
@@ -189,10 +214,39 @@ en este trabajo
          \]         
          Nodo impropio inestable
          \subsection*{Planos Fase del punto }
-         \noindent
+       \noindent
          \includegraphics{isoclinas d=-2 a=1.jpg}
           \includegraphics{vecotrial d=-2 a=1.jpg}
-           
+
+      \subsection*{Valores dados por métodos numéricos}
+         Se mostrarán los resultados numéricos del sistema con valores $y=2x$
+         con $x=100$ un tamaño de paso $h=1$ iniciado en $0$ y finalizado en $10$.
+         Se compararan datos tanto de Runge-Kutta como de Euler Mejorado
+           \subsection*{Runge-Kutta}
+              \includegraphics{valores de runge kutta para x=100 y y=200jpg.jpg}
+            \\Gráficas:\\  
+               Con respecto a al tiempo:           
+            <\includegraphics{Grafica runge_kutta.jpg}
+               Con las funciones una respecto a la otra:
+               \includegraphics{x_y_rungekutta.jpg}
+          \subsection*{Euler Mejorado}
+             \includegraphics{x_y_values_euler.jpg}
+             \\Gráficas:\\  
+             Con respecto a al tiempo:
+              \includegraphics{eulermod.jpg}
+             Con las funciones una respecto a la otra:
+               \includegraphics{eulermodx,y.jpg}
+          \subsection*{Plano Fase}
+            \includegraphics{planofasenumericccc.jpg}
+             \includegraphics{isoclinas numerico.jpg}
+          \subsection*{Análisis}
+             En los resultados anteriores se evidencia que para números de esa magnitud las soluciones 
+             son más grandes que la aritmética de la computadora y además se ve que dado la naturaleza de los
+             métodos numéricos Euler Mejorado nos permite aunque perdiendo precisión tener otro dato más
+
+     
+
+
 \end{document}
 
   

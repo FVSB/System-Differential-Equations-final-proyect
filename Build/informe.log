@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.15)  20 DEC 2022 03:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.15)  21 DEC 2022 06:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -104,25 +104,26 @@ Overfull \hbox (4.35768pt too wide) in paragraph at lines 15--15
 \OT1/cmr/bx/n/14.4 AND LARGE DE-LAYS IN A TUMOR-IMMUNE
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 35.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 35.
 [1
 
-{C:/Users/paco2/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-<Isoclinas de a=-1 y d=1.jpg, id=16, 117.94063pt x 102.88437pt>
+{C:/Users/paco2/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 55.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 55.
+ [2]
+<Isoclinas de a=-1 y d=1.jpg, id=15, 117.94063pt x 102.88437pt>
 File: Isoclinas de a=-1 y d=1.jpg Graphic file (type jpg)
 <use Isoclinas de a=-1 y d=1.jpg>
-Package pdftex.def Info: Isoclinas de a=-1 y d=1.jpg  used on input line 120.
+Package pdftex.def Info: Isoclinas de a=-1 y d=1.jpg  used on input line 145.
 (pdftex.def)             Requested size: 117.94032pt x 102.88411pt.
-<Campo Vectoraal para a=-1 y d=1.jpg, id=17, 430.60875pt x 331.73938pt>
+<Campo Vectoraal para a=-1 y d=1.jpg, id=16, 430.60875pt x 331.73938pt>
 File: Campo Vectoraal para a=-1 y d=1.jpg Graphic file (type jpg)
 <use Campo Vectoraal para a=-1 y d=1.jpg>
-Package pdftex.def Info: Campo Vectoraal para a=-1 y d=1.jpg  used on input line 121.
+Package pdftex.def Info: Campo Vectoraal para a=-1 y d=1.jpg  used on input line 146.
 (pdftex.def)             Requested size: 430.60768pt x 331.73856pt.
 
-Overfull \hbox (85.60768pt too wide) in paragraph at lines 119--121
+Overfull \hbox (85.60768pt too wide) in paragraph at lines 144--146
  [] 
  []
 
@@ -130,15 +131,15 @@ Overfull \hbox (85.60768pt too wide) in paragraph at lines 119--121
 <isoclinas 2jpg.jpg, id=25, 113.42375pt x 108.90688pt>
 File: isoclinas 2jpg.jpg Graphic file (type jpg)
 <use isoclinas 2jpg.jpg>
-Package pdftex.def Info: isoclinas 2jpg.jpg  used on input line 138.
+Package pdftex.def Info: isoclinas 2jpg.jpg  used on input line 163.
 (pdftex.def)             Requested size: 113.42346pt x 108.90659pt.
 <Campo vectorail de d=-1 a1 .jpg, id=26, 432.61626pt x 331.2375pt>
 File: Campo vectorail de d=-1 a1 .jpg Graphic file (type jpg)
 <use Campo vectorail de d=-1 a1 .jpg>
-Package pdftex.def Info: Campo vectorail de d=-1 a1 .jpg  used on input line 139.
+Package pdftex.def Info: Campo vectorail de d=-1 a1 .jpg  used on input line 164.
 (pdftex.def)             Requested size: 432.6152pt x 331.23668pt.
 
-Overfull \hbox (87.6152pt too wide) in paragraph at lines 137--140
+Overfull \hbox (87.6152pt too wide) in paragraph at lines 162--165
  [] 
  []
 
@@ -146,15 +147,15 @@ Overfull \hbox (87.6152pt too wide) in paragraph at lines 137--140
 <isoclinas d=1 a=-2.jpg, id=30, 116.435pt x 105.89563pt>
 File: isoclinas d=1 a=-2.jpg Graphic file (type jpg)
 <use isoclinas d=1 a=-2.jpg>
-Package pdftex.def Info: isoclinas d=1 a=-2.jpg  used on input line 156.
+Package pdftex.def Info: isoclinas d=1 a=-2.jpg  used on input line 181.
 (pdftex.def)             Requested size: 116.43471pt x 105.89536pt.
 <Diagrama de fases para a-2 d1.jpg, id=31, 432.61626pt x 332.74312pt>
 File: Diagrama de fases para a-2 d1.jpg Graphic file (type jpg)
 <use Diagrama de fases para a-2 d1.jpg>
-Package pdftex.def Info: Diagrama de fases para a-2 d1.jpg  used on input line 157.
+Package pdftex.def Info: Diagrama de fases para a-2 d1.jpg  used on input line 182.
 (pdftex.def)             Requested size: 432.6152pt x 332.7423pt.
 
-Overfull \hbox (87.6152pt too wide) in paragraph at lines 155--158
+Overfull \hbox (87.6152pt too wide) in paragraph at lines 180--183
  [] 
  []
 
@@ -162,15 +163,15 @@ Overfull \hbox (87.6152pt too wide) in paragraph at lines 155--158
 <punto silla inestable isoclinas.jpg, id=35, 116.435pt x 106.89937pt>
 File: punto silla inestable isoclinas.jpg Graphic file (type jpg)
 <use punto silla inestable isoclinas.jpg>
-Package pdftex.def Info: punto silla inestable isoclinas.jpg  used on input line 175.
+Package pdftex.def Info: punto silla inestable isoclinas.jpg  used on input line 200.
 (pdftex.def)             Requested size: 116.43471pt x 106.8991pt.
 <punto silla inestable.jpg, id=36, 429.605pt x 334.24875pt>
 File: punto silla inestable.jpg Graphic file (type jpg)
 <use punto silla inestable.jpg>
-Package pdftex.def Info: punto silla inestable.jpg  used on input line 176.
+Package pdftex.def Info: punto silla inestable.jpg  used on input line 201.
 (pdftex.def)             Requested size: 429.60394pt x 334.24792pt.
 
-Overfull \hbox (84.60394pt too wide) in paragraph at lines 174--177
+Overfull \hbox (84.60394pt too wide) in paragraph at lines 199--202
  [] 
  []
 
@@ -178,31 +179,110 @@ Overfull \hbox (84.60394pt too wide) in paragraph at lines 174--177
 <isoclinas d=-2 a=1.jpg, id=44, 118.94438pt x 108.405pt>
 File: isoclinas d=-2 a=1.jpg Graphic file (type jpg)
 <use isoclinas d=-2 a=1.jpg>
-Package pdftex.def Info: isoclinas d=-2 a=1.jpg  used on input line 193.
+Package pdftex.def Info: isoclinas d=-2 a=1.jpg  used on input line 218.
 (pdftex.def)             Requested size: 118.94408pt x 108.40472pt.
 <vecotrial d=-2 a=1.jpg, id=45, 432.11438pt x 328.72812pt>
 File: vecotrial d=-2 a=1.jpg Graphic file (type jpg)
 <use vecotrial d=-2 a=1.jpg>
-Package pdftex.def Info: vecotrial d=-2 a=1.jpg  used on input line 194.
+Package pdftex.def Info: vecotrial d=-2 a=1.jpg  used on input line 219.
 (pdftex.def)             Requested size: 432.11331pt x 328.72731pt.
 
-Overfull \hbox (87.11331pt too wide) in paragraph at lines 192--195
+Overfull \hbox (87.11331pt too wide) in paragraph at lines 217--220
  [] 
  []
 
-[9 <./isoclinas d=-2 a=1.jpg> <./vecotrial d=-2 a=1.jpg>] (c:\Users\paco2\Desktop\Edo final proyect\Proyect\Build\informe.aux) ) 
+[9 <./isoclinas d=-2 a=1.jpg> <./vecotrial d=-2 a=1.jpg>]
+<valores de runge kutta para x=100 y y=200jpg.jpg, id=49, 384.43625pt x 135.50626pt>
+File: valores de runge kutta para x=100 y y=200jpg.jpg Graphic file (type jpg)
+<use valores de runge kutta para x=100 y y=200jpg.jpg>
+Package pdftex.def Info: valores de runge kutta para x=100 y y=200jpg.jpg  used on input line 226.
+(pdftex.def)             Requested size: 384.4353pt x 135.5059pt.
+
+Overfull \hbox (39.4353pt too wide) in paragraph at lines 226--227
+ [] 
+ []
+
+<Grafica runge_kutta.jpg, id=50, 426.59375pt x 327.2225pt>
+File: Grafica runge_kutta.jpg Graphic file (type jpg)
+<use Grafica runge_kutta.jpg>
+Package pdftex.def Info: Grafica runge_kutta.jpg  used on input line 229.
+(pdftex.def)             Requested size: 426.5927pt x 327.2217pt.
+<x_y_rungekutta.jpg, id=51, 440.14438pt x 355.82938pt>
+File: x_y_rungekutta.jpg Graphic file (type jpg)
+<use x_y_rungekutta.jpg>
+Package pdftex.def Info: x_y_rungekutta.jpg  used on input line 231.
+(pdftex.def)             Requested size: 440.1433pt x 355.82849pt.
+
+Overfull \hbox (84.37048pt too wide) in paragraph at lines 228--232
+ \OT1/cmr/m/n/10 <[] 
+ []
+
+
+Overfull \hbox (95.1433pt too wide) in paragraph at lines 228--232
+ [] 
+ []
+
+[10 <./valores de runge kutta para x=100 y y=200jpg.jpg> <./Grafica runge_kutta.jpg>]
+<x_y_values_euler.jpg, id=55, 440.14438pt x 355.82938pt>
+File: x_y_values_euler.jpg Graphic file (type jpg)
+<use x_y_values_euler.jpg>
+Package pdftex.def Info: x_y_values_euler.jpg  used on input line 233.
+(pdftex.def)             Requested size: 440.1433pt x 355.82849pt.
+
+Overfull \hbox (95.1433pt too wide) in paragraph at lines 233--234
+ [] 
+ []
+
+[11 <./x_y_rungekutta.jpg>]
+<eulermod.jpg, id=59, 438.63875pt x 346.79562pt>
+File: eulermod.jpg Graphic file (type jpg)
+<use eulermod.jpg>
+Package pdftex.def Info: eulermod.jpg  used on input line 236.
+(pdftex.def)             Requested size: 438.63766pt x 346.79477pt.
+<eulermodx,y.jpg, id=60, 422.07687pt x 344.78813pt>
+File: eulermodx,y.jpg Graphic file (type jpg)
+<use eulermodx,y.jpg>
+Package pdftex.def Info: eulermodx,y.jpg  used on input line 238.
+(pdftex.def)             Requested size: 422.07584pt x 344.78728pt.
+
+Overfull \hbox (93.63766pt too wide) in paragraph at lines 235--239
+ [] 
+ []
+
+
+Overfull \hbox (77.07584pt too wide) in paragraph at lines 235--239
+ [] 
+ []
+
+[12 <./x_y_values_euler.jpg>] [13 <./eulermod.jpg>]
+<planofasenumericccc.jpg, id=68, 430.60875pt x 331.73938pt>
+File: planofasenumericccc.jpg Graphic file (type jpg)
+<use planofasenumericccc.jpg>
+Package pdftex.def Info: planofasenumericccc.jpg  used on input line 240.
+(pdftex.def)             Requested size: 430.60768pt x 331.73856pt.
+<isoclinas numerico.jpg, id=69, 122.4575pt x 114.92938pt>
+File: isoclinas numerico.jpg Graphic file (type jpg)
+<use isoclinas numerico.jpg>
+Package pdftex.def Info: isoclinas numerico.jpg  used on input line 241.
+(pdftex.def)             Requested size: 122.45718pt x 114.9291pt.
+
+Overfull \hbox (85.60768pt too wide) in paragraph at lines 240--242
+ [] 
+ []
+
+[14 <./eulermodx,y.jpg>] [15 <./planofasenumericccc.jpg> <./isoclinas numerico.jpg>] (c:\Users\paco2\Desktop\Edo final proyect\Proyect\Build\informe.aux) ) 
 Here is how much of TeX's memory you used:
- 1479 strings out of 475281
- 26671 string characters out of 2774064
- 371242 words of memory out of 3000000
- 22982 multiletter control sequences out of 15000+600000
+ 1536 strings out of 475281
+ 28200 string characters out of 2774064
+ 371244 words of memory out of 3000000
+ 23031 multiletter control sequences out of 15000+600000
  473206 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,7n,62p,298b,191s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/paco2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "c:\Users\paco2\Desktop\Edo final proyect\Proyect\Build\informe.pdf" (9 pages, 1027865 bytes).
+Output written on "c:\Users\paco2\Desktop\Edo final proyect\Proyect\Build\informe.pdf" (15 pages, 1480782 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 114 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
