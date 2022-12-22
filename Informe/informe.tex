@@ -2,6 +2,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{array}
 \usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage{pythonhighlight}
+
 \title{Informe de la Tarea Investigativa II, presentado por los
 estudiantes del equipo No. 30}
 \author{Francisco Vicente Suárez Bellón C-212 \\
@@ -244,9 +247,132 @@ en este trabajo
              son más grandes que la aritmética de la computadora y además se ve que dado la naturaleza de los
              métodos numéricos Euler Mejorado nos permite aunque perdiendo precisión tener otro dato más
 
-     
+  \section*{Anexos de códigos}
+        \subsection*{Métodos Numéricos}
+        \newpage
+          \subsection*{Runge-Kutta 4}
+          
+            \begin{python}
+              
+              def runge_kutta_system(f, g, x0, y0, a, b, h):
+                t = np.arange(a, b + h, h)
+                n = len(t)
+                x = np.zeros(n)
+                y = np.zeros(n)
+                x[0] = x0
+                y[0] = y0
+                for i in range(n - 1):
+                    k1 = h * f(x[i], y[i], t[i])
+                    l1 = h * g(x[i], y[i], t[i])
+                    k2 = h * f(x[i] + (k1 / 2), y[i] + (l1 / 2), t[i] + (h / 2))
+                    l2 = h * g(x[i] + (k1 / 2), y[i] + (l1 / 2), t[i] + (h / 2))
+                    k3 = h * f(x[i] + (k2 / 2), y[i] + (l2 / 2), t[i] + (h / 2))
+                    l3 = h * g(x[i] + (k2 / 2), y[i] + (l2 / 2), t[i] + (h / 2))
+                    k4 = h * f(x[i] + k3, y[i] + l3, t[i] + h)
+                    l4 = h * g(x[i] + k3, y[i] + l3, t[i] + h)
+                    x[i + 1] = x[i] + (1 / 6) * (k1 + (2 * k2) + (2 * k3) + k4)
+                    y[i + 1] = y[i] + (1 / 6) * (l1 + (2 * l2) + (2 * l3) + l4)
+            
+                return t, x, y   
+            \end{python}
 
+          \subsection*{Euler Mejorado}
+            \begin{python}
+              def Euler_Mod(f, g, x0, y0, a, b, h):
+                t = np.arange(a, b+h, h)
+                n = len(t)
+                x = np.zeros(n)
+                y = np.zeros(n)
+                x[0] = x0
+                y[0] = y0
+                for i in range(n - 1):
+                    k1 = h * f(x[i], y[i], t[i])
+                    l1 = h * g(x[i], y[i], t[i])
+                    k2 = h * f(x[i]+k1, y[i]+l1, t[i]+(h/2))
+                    l2 = h * g(x[i]+k1, y[i]+l1, t[i]+(h/2))
+                    x[i+1] = x[i]+((1/2)*(k1+k2))
+                    y[i+1] = y[i]+((1/2)*(l1+l2))
 
+                return t, x, y
+            \end{python}
+          \subsection*{Gráficas}
+            \begin{python}
+              import matplotlib.pyplot as plt
+              from scipy.integrate import odeint
+              import numpy as np
+            \end{python}
+            \subsection*{Gráficas de métodos numéricos}
+            \begin{python}
+              def plot(t, x, y, title):
+              plt.plot(t, x, t, y)
+              
+              plt.title(title)
+          
+              plt.show()
+              plt.close()
+          
+              plt.plot(x, y)
+              plt.title(str(title))
+              plt.show()
+              plt.plot(t,x,label="x")
+              plt.plot(t,y,label="y")
+              plt.legend(loc="best")
+            \end{python}
+            \subsection*{Diagrama de fases}
+             \begin{python}
+              def plotdf(f, xran=[-5, 5], yran=[-5, 5], grid=[21, 21], color='k'):
+              """
+              Plot the direction field for an ODE written in the form 
+                  x' = F(x,y)
+                  y' = G(x,y)
+
+              The functions F,G are defined in the list of strings f.
+
+              Input
+              -----
+              f:    list of strings ["F(X,Y)", "G(X,Y)"
+                    F,G are functions of X and Y (capitals).
+              xran: list [xmin, xmax] (optional)
+              yran: list [ymin, ymax] (optional)
+              grid: list [npoints_x, npoints_y] (optional)
+                    Defines the number of points in the x-y grid.
+              color: string (optional)
+                    Color for the vector field (as color defined in matplotlib)
+              """
+              x = np.linspace(xran[0], xran[1], grid[0])
+              y = np.linspace(yran[0], yran[1], grid[1])
+              def dX_dt(X, Y, t=0): return map(eval, f)
+
+              X, Y = np.meshgrid(x, y)  # create a grid
+              DX, DY = dX_dt(X, Y)        # compute growth rate on the grid
+              M = (np.hypot(DX, DY))      # Norm of the growth rate
+              M[M == 0] = 1.             # Avoid zero division errors
+              DX = DX/M                   # Normalize each arrows
+              DY = DY/M
+
+              plt.quiver(X, Y, DX, DY, pivot='mid', color=color)
+              plt.xlim(xran), plt.ylim(yran)
+              plt.grid('on')
+
+             \end{python}
+      \subsection*{Isoclinas}
+      \begin{python}
+        def Isoclinas(f, points=[-2-5, -2, -1.5, -1, -0.5,  0, 0.5, 1, 1.5, 2, 2.5]):
+
+          for y20 in points:
+              tspan = np.linspace(0, 0.5, 20)
+              y0 = [0.0, y20]
+              ys = odeint(f, y0, tspan)
+
+              plt.plot(ys[:, 0], ys[:, 1], 'b-')  # path
+              plt.plot([ys[0, 0]], [ys[0, 1]], 'o')  # start
+              plt.plot([ys[-1, 0]], [ys[-1, 1]], 's')  # end
+
+          plt.xlim([-2, 8])
+
+          plt.show()
+      \end{python}
 \end{document}
+
 
   

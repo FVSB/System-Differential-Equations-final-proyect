@@ -45,18 +45,18 @@ plt.show()
 
 def plot(t, x, y, title):
     plt.plot(t, x, t, y)
-    print("Show plot")
+
     plt.title(title)
 
     plt.show()
     plt.close()
 
     plt.plot(x, y)
-    plt.title(str(title+" phase space"))
+    plt.title(str(title))
     plt.show()
-  #  plt.plot(t,x,label="x")
-   # plt.plot(t,y,label="y")
-   # plt.legend(loc="best")
+    plt.plot(t, x, label="x")
+    plt.plot(t, y, label="y")
+    plt.legend(loc="best")
 
 
 def Plot_Fields(f, g, t=0):

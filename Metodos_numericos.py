@@ -3,7 +3,6 @@ import numpy as np
 
 def runge_kutta_system(f, g, x0, y0, a, b, h):
     """_summary_
-
     Args:
         f (funt func): evaluar la funcion f
         g (funt func): evaluar la funcion g
@@ -18,7 +17,6 @@ def runge_kutta_system(f, g, x0, y0, a, b, h):
                         x=array con valor de x
                         y=array con valor de y
     """
-
     t = np.arange(a, b + h, h)
     n = len(t)
     x = np.zeros(n)
